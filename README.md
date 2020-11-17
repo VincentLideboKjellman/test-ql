@@ -1,2 +1,2 @@
 # test-ql
-Evaluation Assignment for QueensLab
+Evaluation Assignment
