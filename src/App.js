@@ -5,9 +5,7 @@ import Algorithms from './Algorithms';
 function App() {
   return (
     <div className="App">
-     <Algorithms>
-       
-     </Algorithms>
+     <Algorithms/>
     </div>
   );
 }
