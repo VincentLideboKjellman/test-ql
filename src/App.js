@@ -1,11 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-import Algorithms from './Algorithms';
+import Algorithms from './components/Algorithms';
+import Form from './components/Form';
 
 function App() {
   return (
     <div className="App">
      <Algorithms/>
+     <Form />
     </div>
   );
 }
