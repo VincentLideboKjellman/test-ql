@@ -1,2 +1,2 @@
 # test-ql
-Evaluation Assignment
+Evaluation Assignment, React.js and algorithms
