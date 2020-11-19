@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import InputField from "./InputField";
+import useForm from "../helpers/useForm";
+import Button from "../components/Button";
 
 const StyledForm = styled.div`
     display: flex;
@@ -12,14 +14,24 @@ const StyledForm = styled.div`
 `
 
 const Form = () => {
+    const {
+        values,
+        errors,
+        handleChange,
+        handleSubmit,
+      } = useForm();
+
   return (
     <StyledForm>
         
-        <form>
-        Credit Card info:
+        <form onSubmit={handleSubmit} noValidate>
+            Credit Card info:
             <InputField label="Card Number" type="text"/>
             <InputField label="Card Name" type="text"/>
-            <InputField isDate="true" label="Expiration Date" type="month"/>
+            Expiration Date:
+            <InputField label="CVV" type="text"/>
+            <InputField isDate="true" label="Expiration Date"/>
+            <Button name="Submit"/>
         </form>
     </StyledForm>
   );
