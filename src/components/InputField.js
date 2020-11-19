@@ -1,6 +1,6 @@
 import {React, useState} from "react";
 import styled from "styled-components";
-import useForm from "../helpers/useForm";
+//import useForm from "../helpers/useForm";
 
 const StyledInputField = styled.div`
 *,
@@ -137,7 +137,6 @@ const InputField = (props) => {
                 <div className="wrapper">
                     {/* Normal input field */}
                     {!isDate && <>
-
                         {/* <input autoComplete="off" classNameName={`input ${errors.email && 'is-danger'}`} type="email" name="email" onChange={handleChange} value={values.email || ''} required />
                         {errors.email && (
                             <p classNameName="help is-danger">{errors.email}</p>

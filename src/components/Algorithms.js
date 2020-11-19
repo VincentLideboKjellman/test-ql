@@ -42,7 +42,7 @@ const oddSum = (input) => {
               sumOfDigits.push(element%9);
         });
        //sumOfDigits;
-
+       
     // Checks if odd
     let odds = sumOfDigits.filter(n => n%2);
     console.log(odds);
