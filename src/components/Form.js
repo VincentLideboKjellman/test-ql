@@ -25,11 +25,11 @@ const Form = () => {
     <StyledForm>
         
         <form onSubmit={handleSubmit} noValidate>
-            Credit Card info:
+            <h3>Credit Card info:</h3>
             <InputField label="Card Number" type="text"/>
             <InputField label="Card Name" type="text"/>
-            Expiration Date:
             <InputField label="CVV" type="text"/>
+            <h3>Expiration Date:</h3>
             <InputField isDate="true" label="Expiration Date"/>
             <Button name="Submit"/>
         </form>

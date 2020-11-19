@@ -105,6 +105,13 @@ label {
     width: 100%;
 }
 
+select {
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    width:50%;
+    //appearance: none;       /* Remove default arrow */
+ }
+
 
 `
 const InputField = (props) => {
@@ -130,6 +137,12 @@ const InputField = (props) => {
                 <div class="wrapper">
                     {/* Normal input field */}
                     {!isDate && <>
+
+                        {/* <input autoComplete="off" className={`input ${errors.email && 'is-danger'}`} type="email" name="email" onChange={handleChange} value={values.email || ''} required />
+                        {errors.email && (
+                            <p className="help is-danger">{errors.email}</p>
+                         )} */}
+
                         <div class="group">
                         <input type={props.type} required="required"/>
                             <span class="highlight"></span>
