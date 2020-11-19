@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import InputField from "./InputField";
-import useForm from "../helpers/useForm";
+// import useForm from "../helpers/useForm";
 import Button from "../components/Button";
 
 const StyledForm = styled.div`
@@ -14,17 +14,18 @@ const StyledForm = styled.div`
 `
 
 const Form = () => {
-    const {
-        values,
-        errors,
-        handleChange,
-        handleSubmit,
-      } = useForm();
+    // const {
+    //     values,
+    //     errors,
+    //     handleChange,
+    //     handleSubmit,
+    //   } = useForm();
 
   return (
     <StyledForm>
         
-        <form onSubmit={handleSubmit} noValidate>
+        {/* <form onSubmit={handleSubmit} noValidate> */}
+        <form>
             <h3>Credit Card info:</h3>
             <InputField label="Card Number" type="text"/>
             <InputField label="Card Name" type="text"/>

@@ -134,26 +134,26 @@ const InputField = (props) => {
     return (
         <StyledInputField>
             <>
-                <div class="wrapper">
+                <div className="wrapper">
                     {/* Normal input field */}
                     {!isDate && <>
 
-                        {/* <input autoComplete="off" className={`input ${errors.email && 'is-danger'}`} type="email" name="email" onChange={handleChange} value={values.email || ''} required />
+                        {/* <input autoComplete="off" classNameName={`input ${errors.email && 'is-danger'}`} type="email" name="email" onChange={handleChange} value={values.email || ''} required />
                         {errors.email && (
-                            <p className="help is-danger">{errors.email}</p>
+                            <p classNameName="help is-danger">{errors.email}</p>
                          )} */}
 
-                        <div class="group">
+                        <div className="group">
                         <input type={props.type} required="required"/>
-                            <span class="highlight"></span>
-                            <span class="bar"></span>
+                            <span className="highlight"></span>
+                            <span className="bar"></span>
                             <label>{props.label}</label>
                         </div>
                     </>}
                     {/* Date pick field */}
                     {isDate && <>
-                        <div class="group">
-                        <div class="expire-div">
+                        <div className="group">
+                        <div className="expire-div">
                             <label></label>
                             <select>
                                 {monthArray.map(function(month, index){
